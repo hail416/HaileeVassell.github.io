@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Job Title or Tagline</title>
+
+    <!-- These are the fonts linked from Google. If you create a new fonts link in google fonts, change it here.  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather|Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Judson|Quando" rel="stylesheet">
+
+    <!-- OUR STYLESHEET LINK HERE -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <!-- EX. 1: Change the content between the HTML tags below with your information. Try changing all of the sections: the header, profile, work experience, etc..
+      -->
+    <!-- HEADER -->
+
+    <header>
+      <div class="name">
+      <h1>Hailee Vassell</h1>
+    </div>
+  <h2 class="quotes">Traveller</h2>
+  <h2 class="quotes">Leader</h2>
+  <h2 class="quotes">Coder</h2>
+  <h2 class="quotes">Entrepreneur</h2>
+  <h2 class="quotes">Adventurer</h2>
+  <h2 class="quotes">Innovator</h2>
+  <h2 class="quotes">Steminist</h2>
+
+    </header>
+
+
+    <section class="profile">
+    <!--      <img src="images/profile.jpg" alt="Your Name">-->
+
+          <div class="summary">
+            <h1>Hi There!</h1>
+          <q>Security is mostly superstition. It does not exist in nature, nor do the
+children of men as a whole experience it. Avoiding danger is no safer in the
+long run than outright exposure. Life is either a daring adventure or
+nothing.</q>
+            <p>
+          This quote in particular speaks to me. I value adventure and experience over security and certainty. I am a strong believer in pursuing your dreams and what makes you happy. Travelling, social media and meeting people make me happy. I also have a passion for photography and video editing.
+            </p>
+
+          </div>
+
+        </section>
+
+
+
+
+        <!-- WORK EXPERIENCE -->
+        <section class="work">
+          <hr>
+          <h1>Work Experience</h1>
+
+          <div class="item">
+            <div class="details">
+              <h2>Milestones Daycare</h2>
+              <h3>Childcare worker</h3>
+              <p class="date">July 2013 - August 2013</p>
+            </div>
+
+            <div class="description">
+             <ul>
+               <li>	Care for children aged 2-6</li>
+               <li> Organize daily activities</li>
+               <li>Give daily reports to parents</li>
+               <li>Ensure emotional, physical and intellectual well being of children</li>
+
+              </ul>
+            </div>
+          </div><!-- close .item -->
+
+          <div class="item">
+            <div class="details">
+              <h2>The News</h2>
+              <h3>Newspaper carrier</h3>
+              <p class="date">September 2011- August 2012</p>
+            </div>
+
+            <div class="description">
+            <ul>
+              <li>Deliver newspapers to individuals</li>
+              <li>Keep records of deliveries </li>
+              </ul>
+
+            </div>
+          </div><!-- close .item -->
+          <hr>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="skills">
+          <h1>Skills</h1>
+
+          <div class="skills-list">
+
+
+            <div class="columns">
+              <h3>Languages:</h3>
+              <ul>
+                <li>English- fluent</li>
+                <li>French- fluent</li>
+              </ul>
+            </div>
+
+            <div class="columns">
+              <h3> Technical skills:</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Microsoft office</li>
+
+              </ul>
+            </div>
+
+            <div class="columns">
+              <h3>Soft skills:</h3>
+              <ul>
+                <li>Collaboration</li>
+                <li>Leadership</li>
+                <li>Critical thinking</li>
+                <li>Creavitity</li>
+                <li>Public speaking</li>
+              </ul>
+            </div>
+          </div><!-- close .skills-list -->
+<hr>
+          <div class="skills-circles">
+            <h1>Areas of interest</h1>
+            <div class="interest">
+            <ul>
+              <li><span>Social Media</span></li>
+              <li><span>Digital Media</span></li>
+              <li><span>Photgraphy & Video editing</span></li>
+              <li><span>Graphic Design</span></li>
+              <li><span>Business</span></li>
+            </ul>
+          </div>
+        </div><!-- close .skills-circles -->
+        </section>
+
+        <!-- EDUCATION -->
+
+        <section class="education">
+          <hr>
+          <h1>Education</h1>
+
+          <div class="item">
+            <h2>Streetsville Secondary School</h2>
+            <h3>Ontario Secondary School Diploma</h3>
+            <p class="date">2014 - Present</p>
+
+          </div>
+
+        </section>
+
+
+
+
+        <!-- CONTACT INFO -->
+        <footer class="contact">
+          <h1>Let's keep in touch!</h1>
+
+          <p><a href="mailto:haileevassell.hv@gmail.com"> Send me an email!</a></p>
+          <p>905.828.7272</p>
+          <p> Mississauga, Ontario</p>
+
+          <p class="copyright">Copyright &#169; 2016 by Hailee Vassell</p>
+        </footer>
+      </body>
+      <script>
+      (function() {
+
+          var quotes = $(".quotes");
+          var quoteIndex = -1;
+
+          function showNextQuote() {
+              ++quoteIndex;
+              quotes.eq(quoteIndex % quotes.length)
+                  .fadeIn(2000)
+                  .delay(2000)
+                  .fadeOut(2000, showNextQuote);
+          }
+
+          showNextQuote();
+
+      })();
+    </script>
+    </html>
