@@ -112,7 +112,7 @@ a {
 /*Below you change what color links will change to when you hover over them.*/
 a:hover {
   position:relative;
-  color: white;
+  color:blue;
   text-decoration: none;
 }
 
